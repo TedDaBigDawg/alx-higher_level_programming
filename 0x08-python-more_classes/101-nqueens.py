@@ -48,7 +48,6 @@ def get_solution(board):
 
 def xout(board, row, col):
     """X out spots on a chessboard.
-
     All spots where non-attacking queens can no
     longer be played are X-ed out.
 
@@ -121,7 +120,7 @@ def recursive_solve(board, row, queens, solutions):
             solutions = recursive_solve(tmp_board, row + 1,
                                         queens + 1, solutions)
 
-            return (solutions)
+    return (solutions)
 
 
 if __name__ == "__main__":
